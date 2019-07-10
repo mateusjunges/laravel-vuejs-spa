@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\SpaController;
+
+Route::get('/{any}', SpaController::class)->where('any', '.*');
