@@ -20,7 +20,9 @@ mix.extend('aliasConfig', new class {
             'vue$': 'vue/dist/vue.esm.js',
             '@': __dirname + '/resources/js',
             '@components': __dirname + '/resources/js/components/',
-            '@views': __dirname + '/resources/js/views'
+            '@views': __dirname + '/resources/js/views',
+            '@api': __dirname + '/resources/js/api',
+            '@routes': __dirname + '/resources/js/routes'
         };
     }
 });

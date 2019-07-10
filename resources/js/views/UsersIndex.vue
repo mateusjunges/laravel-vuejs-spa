@@ -8,9 +8,12 @@
         </div>
 
         <ul v-if="users">
-            <li v-for="{ name, email } in users">
+            <li v-for="{ id, name, email } in users">
                 <strong>Name: </strong>{{ name }}
                 <strong>Email: </strong>{{ email }}
+                <router-link :to="{ name: 'users.edit', params: { id } }">
+                    <button>Edit</button>
+                </router-link>
             </li>
         </ul>
         <div class="pagination">
