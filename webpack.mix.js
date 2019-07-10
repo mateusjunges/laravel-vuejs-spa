@@ -18,7 +18,9 @@ mix.extend('aliasConfig', new class {
         webpackConfig.resolve.extensions.push('.js', '.json', '.vue');
         webpackConfig.resolve.alias = {
             'vue$': 'vue/dist/vue.esm.js',
-            '@components': __dirname + '/resources/js/components/'
+            '@': __dirname + '/resources/js',
+            '@components': __dirname + '/resources/js/components/',
+            '@views': __dirname + '/resources/js/views'
         };
     }
 });
